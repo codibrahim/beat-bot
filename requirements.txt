@@ -1,0 +1,18 @@
+# Beat-Bot Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Slack integration
+slack_bolt>=1.18.0
+slack_sdk>=3.26.0
+
+# Data processing
+pandas>=2.0.0
+
+# PDF parsing (for handbook ingestion)
+PyPDF2>=3.0.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# HTTP requests (for OpenHolidays API)
+requests>=2.31.0
