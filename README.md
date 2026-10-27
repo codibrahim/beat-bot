@@ -77,6 +77,18 @@ beat-bot/
 - **Data:** pandas, CSV for holiday data
 - **AI/LLM:** TBD (Sprint 2 decision)
 
+### Backbone LLM Candidates
+
+The backbone LLM generates answers from retrieved handbook passages. These open-weight models are candidates for evaluation; none is integrated or selected yet.
+
+| Model (official model card) | Parameters | License | Evaluation focus for Beat-Bot |
+|-----------------------------|------------|---------|-------------------------------|
+| [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) | 8.2B | Apache 2.0 | Smaller multilingual baseline with thinking and non-thinking modes |
+| [Gemma 3 12B IT](https://huggingface.co/google/gemma-3-12b-it) | 12B | Gemma terms | Multilingual instruction following and document Q&A |
+| [Mistral Small 3.1 24B Instruct](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503) | 24B | Apache 2.0 | Multilingual dialogue and long-document understanding |
+
+Compare candidates on handbook citation accuracy, refusal when evidence is missing, security filtering, latency, and deployment cost before the Sprint 2 decision. Retrieval and application checks must enforce Beat's acceptance criteria regardless of the model.
+
 ---
 
 ## Definition of Done
